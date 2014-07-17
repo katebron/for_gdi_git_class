@@ -68,8 +68,7 @@
           <ul>
             <li>What's your name?</li>
             <li>What do you hope to get out of the class?</li>
-            <li>MAC, Linux or PC?</li>
-            <li>How confident are you on the command-line?</li>
+            <li>What's your OS? MAC, Linux, PC?</li>
             <li>Best and/or worst thing about Boston</li>
           </ul>
           </div>
@@ -150,9 +149,9 @@
               <h3>Basic Commands</h3>
           
                   <ul>
+                  <li><strong>pwd</strong>: print working directory. Tells you where you are!</li>
                   <li><strong>ls, ls-a, ls-al</strong>: list the files in the folder (see hidden files, see permissions)</li>
                   <li><strong>cd</strong>: short for change directory. Lets you move around!</li>
-                   <li><strong>pwd</strong>: print working directory. Tells you where you are!</li>
                   <li><strong>mkdir</strong>: make a directory. Ex "mkdir my_file"</li>
                   <li><strong>touch</strong>: make a file. Ex "touch my_file"</li>
                     <li><strong>cat</strong>: read file in CLI or move contents of one file into another/new file.</li>
@@ -165,6 +164,21 @@
                 </ul>
              
             </section>
+           <section>
+              <h3>Command Line Practice</h3>
+          
+                  <ul>
+                  <li>Make a new folder</li>
+                  <li>Go into it</li>
+                  <li>Create a file</li>
+                  <li>Move back up to the initial directory</li>
+                  
+                    </ul>
+             
+            </section>
+            
+            
+
             <section>
               <div>
                   
@@ -263,10 +277,10 @@
         <section>
         <h3>What Git Does</h3>
         <ul>
-          <li>Keeps a detailed record and timeline of everything in a project
-          <li>Alerts you to conflicts when you merge one version of the project with another
-          <li>Allows you to jump back into an earlier version
-          <li>Lets you easily make copies ("branches") of the project that you can track and merge
+          <li>Keeps track of everything in your project</li>
+          <li>Alerts you to conflicts when you merge one version of the project with another</li>
+          <li>Allows you to jump back into an earlier version</li>
+          <li>Lets you easily make copies ("branches") of the project that you can track and merge</li>
         </ul>
       </section>
         <section>
@@ -292,7 +306,7 @@
          <li>When you create a new branch of a project, all the project files are instantly
           copied into a new version</li>
           <li>You can do whatever you want to this new branch without altering the existing project</li>
-          <li>Git branches are done by the "git checkout" command.<ul>
+          <li>Move between branches with the "git checkout" command.<ul>
           <li>Start a new branch like this: "git checkout -b new_branch_name"</li>
           <li>Jump onto an existing branch by "git checkout existing_branch_name"</li>
         </ul>
@@ -456,9 +470,9 @@ $ git config --list
             <p>If you haven't committed yet</p>
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
+               <em>after making change to hello_world.txt</em>
               <pre><code contenteditable class ="command-line">
-  change hello_world.txt
-  git checkout hello_world.txt
+            git checkout hello_world.txt
               </code></pre>
             </div>
             <p class="fragment">Look at hello_world.txt. Your changes are gone.</p>
@@ -478,7 +492,7 @@ git checkout hello_world.txt
           </section>
           <section>
             <h3>Nobody's Perfect</h3>
-            <h4>Undoing staged changes</h4> 
+            <h4>Undoing committed changes</h4> 
             <div class = "fragment">
               <p>Open hello_world.txt and add some new text</p>
               <pre><code contenteditable class ="command-line">
@@ -719,9 +733,13 @@ git fetch upstream
         </section>
         <!-- -->
         <section>
-          <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
-            <div class ="clear"></div></div>
+          <h2>Resources</h2>
+         <ul>
+          <li><a href="https://try.github.io/levels/1/challenges/1">Practice git commands on a command-line like interface</a> </li>
+          <li><a href="https://help.github.com/categories/54/articles">GitHub Bootcamp</a></li>
+          <li><a href="http://git-scm.com/book">Git Pro book: all online</a></li>
+          <li><a href="http://rogerdudler.github.io/git-guide/">"Simple" guide</a> </li>
+          </ul> 
         </section>
 			</div>
   		<footer>
