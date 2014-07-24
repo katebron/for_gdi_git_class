@@ -401,6 +401,17 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
           </section>
           <section>
             <h3>Installation and Setup</h3>
+            <p>Copy the SSH Key to your clipboard</p>
+            <pre><code contenteditable class ="command-line">
+# PC:              
+$ clip < ~/.ssh/id_rsa.pub 
+
+# Mac:
+$ pbcopy < ~/.ssh/id_rsa.pub
+
+            </code></pre>
+          </section>
+          <section>
             <p>Add SSH Key to Github</p>
             <img src = "images/add-ssh.png" alt ="Steps to add SSH key to github account"/>
           </section>
@@ -760,8 +771,8 @@ git fetch upstream
         <section>
           <h2>Class Project!</h2>
           <ul>
-            <li>Fork the repository at <a href="https://github.com/katebron/other-boston-history">https://github.com/katebron/other-boston-history</a></li>
-            <li>Clone your version of the repository</li>
+            <li>Fork the repository at <a href="https://github.com/katebron/other_boston_history">https://github.com/katebron/other-boston-history</a></li>
+            <li>Clone your version of the repository to your local environment</li>
             <li>Edit the boston_hx.geojson file</li>
             <li>Push this up to your version of the repository</li>
             <li>Issue a pull request at my github page of the projet</li>
