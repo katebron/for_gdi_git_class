@@ -330,28 +330,28 @@
          <li>git clone and git fork are used to start collaborating on projects</li>
          </ul>
         </section>
-        </section>
-
-        <!-- Installation and Setup-->
         <section>
-          <h3>Second Class</h3>
-            <ul>
-              <li>Install Git</li>
-              <li>Make sure we all have github accounts</li>
-              <li>Create SSH keys on local computer & add them to GH account</li>
-              <li>Start a local repository, create a branch, merge it</li>
-              <li>Start a GH repository and push local to it</li>
-              <li>If time, fork, clone & contribute to "Boston's other history" repo/map</li>
-            </ul>
+          <h3>Git vs. Github</h3>
+          <ul>
+            <li>Git is an open source software program.</li>
+            <li>GitHub is a separate website 
+             <ul><li>You don't need to use GitHub to use git</li>
+                <li>GitHub gives you a place to post your projects that happen to use git</li>
+                <li>Good for back up, visualization, added features</li>
+                <li>Good for collaboration and team communication</li>
+             </li>
+           </ul>
         </section>
-        <section>
-          <section>
+      </section>
+      <section>  
+         <section>
             <h3>Installation and Setup</h3>
             <a href = "http://git-scm.com/downloads" alt ="Download latest version of Git" target ="_blank">
               <p>Install git</p>
               <img src = "images/install-git.png" alt = "Download latest version of Git"/>
             </a>
           </section>
+
            <section>
             <h3>Installation and Setup</h3>
             <p>Setup name and email in gitconfig</p>
@@ -409,8 +409,37 @@ $ pbcopy < ~/.ssh/id_rsa.pub
             <p>Add SSH Key to Github</p>
             <img src = "images/add-ssh.png" alt ="Steps to add SSH key to github account"/>
           </section>
-         
+           <section>
+          <h3>Installation and Setup</h3>
+          <p>Test your connection to GitHub from your computer</p>
+
+           <pre><code contenteditable class ="command-line">
+# ssh -T git@github.com
+          </code></pre>
+          <p>You should see:</p>
+          <pre><code contenteditable class ="command-line">
+# Hi (github user name)! 
+# You've successfully authenticated, but GitHub does not provide shell access.
+            </code></pre>
+
+       </section>
+         </section>
+  
+       
+
+        <!-- Installation and Setup-->
+        <section>
+          <h3>Second Class</h3>
+            <ul>
+              <li>Install Git</li>
+              <li>Make sure we all have github accounts</li>
+              <li>Create SSH keys on local computer & add them to GH account</li>
+              <li>Start a local repository, create a branch, merge it</li>
+              <li>Start a GH repository and push local to it</li>
+              <li>If time, fork, clone & contribute to "Boston's other history" repo/map</li>
+            </ul>
         </section>
+          
         <!-- First commands-->
         <section>
           <section>
