@@ -495,6 +495,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
   git add hello_world.txt
   git commit -m "First commit. Added hello world to repository."
             </code></pre>
+            <p>
           </section>
         </section>
         <!-- Explanation-->
@@ -592,6 +593,23 @@ git add my_other_file.txt
             <pre><code contenteditable class ="command-line">
 git rm my_other_file.txt
             </code></pre>
+          </section>
+          <section>
+            <h3>Git diff</h3>
+            <p>Make a change to your hello_world file</p>
+            <p>Before you add the changes, run:
+              <pre><code contenteditable class ="command-line">
+git diff
+              </code></pre>
+            <p>To see differences between commits:
+                     <pre><code contenteditable class ="command-line">
+git diff oneSHA anotherSHA
+            </code></pre>
+            <p>To see differences between branches:
+               <pre><code contenteditable class ="command-line">
+git diff one_branch...another_branch
+            </code></pre>
+ 
           </section>
         </section>
         <!-- Branches-->
@@ -794,7 +812,7 @@ git fetch upstream
           <ul>
             <li>Fork the repository at <a href="https://github.com/katebron/other_boston_history">https://github.com/katebron/other-boston-history</a></li>
             <li>Clone your version of the repository to your local environment</li>
-            <li>Edit the boston_hx.geojson file</li>
+            <li>Edit the boston_hx.geojson or resources.txt files - or add your own file!</li>
             <li>Push this up to your version of the repository</li>
             <li>Issue a pull request at my github page of the projet</li>
           </ul>
