@@ -302,55 +302,75 @@
         <section>
         <h3>Starting a Repository</h3>
         <ul>
-          <li><strong>git init</strong>: You tell git that you're starting a repository. And then you take snapshots of it by a two step proccess: git add and git commit</li>
+          <li><strong>Start the repository with "git init"</strong>: You tell git that you're starting a repository. (Not needed if you're working on a project from github/other git repository).
+            And then you take snapshots of it by a two step proccess: git add and git commit</li>
          
-          <li> This "snapshot" is a version of every file in your repository.
-        If you make a mistake, you can go back to an earlier snapshot, or "commit". 
-        <li>The commit is identifed by a unique number and letter combination, called a hash.</li>
-        <li>Taking a snapshot is a two step process: add and commit<ul>
-          <ul>
-        <li>stage the snapshot by adding the files: <strong>git add</strong>.</li>
-        <li>take the actual snapshot by commiting the files: <strong>git commit</strong>.</li>
+          <li><strong>As you make changes, commit them.</strong></li>
         </ul>
-       </ul>
+       </section>
+       <section>
+       <h3>What is a Commit?</h3>   
+       <ul>
+          <li class ="fragment">Commit = snapshot of all the files as they look at that point in time</li>
+           
+        <li class ="fragment">If you make a mistake, you can go back to an earlier commit</li>
+        <li class ="fragment">Each commit is identifed by a unique number and letter combination, called a hash.</li>
+
+      </ul>
+    </section>
+    <section>
+      <h3>Example of past commits</h3>
+       <img src="images/commitSS.png" alt="git commit example from git log" height="500px">
+
+    </section>
+    <section>
+      <h3>Making Commits</h3>
+        <ul>
+       <li class ="fragment">Making a commit is a two step process: add and commit</li>
+       <li class ="fragment">stage the commit by adding the files: <strong>git add</strong>.</li>
+        <li class ="fragment">take the actual commit by running: <strong>git commit</strong> and leaving a note.</li>
+        <li class ="fragment"> Example: 
+<pre><code contenteditable class ="command-line">git add .</pre></code>
+          <pre><code contenteditable class ="command-line">git commit -m "change menu link for contact page"</pre></code></li>
+        </ul>
+
 
       </section>
       <section>
-      <h3>Git branches make development easier and safer</h3>
+      <h3>Use Git branches to write and test out code safely</h3>
           
         <ul>
-         <li>When you create a new branch of a project, all the project files are instantly
+         <li class ="fragment">When you create a new branch of a project, all the project files are instantly
           copied into a new version</li>
-          <li>You can do whatever you want to this new branch without altering the existing project</li>
-          <li>Move between branches with the "git checkout" command.<ul>
-          <li>Start a new branch like this: "git checkout -b new_branch_name"</li>
-          <li>Jump onto an existing branch by "git checkout existing_branch_name"</li>
+          <img class="fragment" src="images/branchSS1.png" alt="branch example" width="400px">
+          <li class ="fragment">You can do whatever you want to this new branch without altering the existing project</li>
         </ul>
+      </section>
+      <section>
+        <h3>Using branches: example</h3>
+         <img src="images/branchSS2.png" alt="branch example" width="600px">
+      
+      </section>
+      <section>
+        <h3>Using branches: example</h3>
+         <img class = "fragment"src="images/branchSS3.png" alt="branch example" width="600px">
+         <ul>
+        <li class="fragment">If the code in the new branch works, we can merge it into the master branch</li>
+        <li class="fragment">If the code doesn't work, we can just delete that branch and try again.</li>
       </ul>
-      </section>    
+      </section>        
       <section>
         <h3>Git makes sharing your projects easy</h3>
         <ul>
-        <li>Commits and branching make for safer collaboration</li>
-         <li> Someone can clone or fork your project or repository and work on it - how easily
+        <li class ="fragment">Commits and branching make for safer collaboration</li>
+         <li class ="fragment"> Someone can clone or fork your project or repository and work on it - how easily
           the changes are merged depends on how your project and team is organized.
           This is also where github makes things easier.</li>
-         <li>Github makes collaborating on, and contributing to, git repositories easier</li> 
-         <li>Fork and git clone are used to start collaborating on projects</li>
+         <li class ="fragment">Github makes collaborating on, and contributing to, git repositories easier</li> 
+         <li class ="fragment">Fork and git clone are used to start collaborating on projects</li>
          </ul>
         </section>
-        <section>
-          <h3>Git vs. Github</h3>
-          <ul>
-            <li>Git is an open source software program.</li>
-            <li>GitHub is a separate website 
-             <ul><li>You don't need to use GitHub to use git</li>
-                <li>GitHub gives you a place to post your projects that happen to use git</li>
-                <li>Good for back up, visualization, added features</li>
-                <li>Good for collaboration and team communication</li>
-             </li>
-           </ul>
-        </section>
+       
                  <section>
             <h3><a href = "http://www.github.com" alt="GitHub homepage">GitHub</a></h3>
             <ul>
