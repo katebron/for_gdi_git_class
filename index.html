@@ -753,14 +753,22 @@ git merge master
       
         <!-- New repository-->
         <section>
-          <section>
+           <section>
             <h3>GitHub</h3>
-            <h4>Create your first repository</h4>
+            <h4>We'll work with two GitHub repositories </h4>
+            <ol><li>Create a brand new repository on GitHub and clone it to your desktop</li>
+            <li>Go back to the inital repository we just created and push that to GitHub. Do this by:
+            <ul><li> create a placeholder repository on GitHub </li>
+              <li>run a quick configuration command.</li></ul> </ol> 
+          </section>
+          <section>
+            <h3>GitHub: 1st Exercise</h3>
+            <h4>Create a new repository</h4>
             <img src = "images/bootcamp_2_newrepo.jpg" alt ="How to create a new repository. Image from https://help.github.com/articles/create-a-repo"/>
           </section>
           <section>
             <h3>GitHub</h3>
-            <h4>Create your first repository</h4>
+            <h4>Create a new repository</h4>
             <img src = "images/bootcamp_2_repoinfo.png" alt ="How to create a new repository. Image from https://help.github.com/articles/create-a-repo"/>
           </section>
           <section>
@@ -773,13 +781,14 @@ git merge master
           <section>
             <h3>GitHub</h3>
             <h4>Get Local Repository of GitHub Repo</h4>
+            <ul>
+            <li>Copy the URL of your GitHub Repository to your clipboard</li>
+            <img src = "images/gitClone.png" style="margin-left: 7em" width="30%" alt ="Where to find the git clone URL in GitHub"/>
+            <li>Then, back on your command line:</li>
+          </ul>
             <pre><code contenteditable class ="command-line">
 cd ../ # Back in root directory
-mkdir hello-github
-cd hello-github
-git init
-git remote add origin git@github.com:username/NAME-OF-REPO
-git pull origin master
+git clone (SSH url) 
             </code></pre>
           </section>
           <section>
@@ -797,18 +806,32 @@ git push origin master
             <h3>GitHub</h3>
             <h4>Pulling from remote repository</h4>
             <p>If you are working with a team, you want to make sure that you have everyone's changes before pushing your changes to the GitHub repo</p>
+             <ul><li class="fragment">To simulate this, make a change to a file in your project within GitHub.</li></ul>         
+          </section>
+          <section>
+            <h3>GitHub</h3>
+            <h4>Pulling from remote repository</h4>
+            <p>Now back on your commandline, pull those changes down from GitHub
             <pre><code contenteditable class ="command-line">
-# Commit local changes
-git commit -m "My latest commit"
 # Pull changes other people have made
 git pull origin master
-# Fix any conflicts (see merge conflicts above) and commit
-git commit -m "Fixing merging conflicts"
-# push local changes to GitHub
+            </code></pre>
+            <p class="fragment">You'll frequently need to deal with merge conflicts when doing this.
+          </section>
+          <section>
+            <h3>GitHub: 2nd Exercise</h3>
+            <h4>Moving a local git repository to GitHub for the first time</h4>
+            <ol>
+            <li>Make another repository on GitHub.</li>
+            <li>Copy the URL for the repository</li>
+            <li>Back on your computer, go to your first repository, and run:</li>
+               <pre><code contenteditable class ="command-line">
+git remote add origin (address of github repo)
 git push origin master
             </code></pre>
-          </section>
+            <p>Note: if you added a README or gitignore file on GitHub you'll have to merge those before you can push up your repository</p>
         </section>
+       </section> 
         <!-- Fork a repository-->
         <section>
           <section>
@@ -839,7 +862,9 @@ git remote add upstream https://github.com/original-username/FORKED-REPO-NAME.gi
 git fetch upstream
 # Pulls in changes not present in your local repository, without modifying your files
             </code></pre>
+            <p><a href="https://help.github.com/articles/syncing-a-fork/">More about syncing your local repo with the initial forked project.</a></p>
           </section>
+
         </section>
         <!-- Pull requests-->
         <section>
